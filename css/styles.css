@@ -13,6 +13,15 @@ body {
     font-family: var(--main-font);
     color: var(--main-text-color);
 }
+.container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 200px;
+}
+.section {
+    padding: 47px 0;
+}
 .link {
     text-decoration: none;
 }
