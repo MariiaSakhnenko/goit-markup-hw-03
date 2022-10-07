@@ -9,31 +9,31 @@
     --accent-text-color: #2196F3;
     --main-bg-cl: #2F303A;
 }
-body {
-    font-family: var(--main-font);
-    color: var(--main-text-color);
-}
 .container {
     width: 100%;
-    max-width: 1200px;
+    max-width: 1600px;
     margin: 0 auto;
     padding: 0 215px;
 }
 .section {
+    display: block;
     padding: 94px 0;
 }
-.hero-section {
-    background-color: var(--main-bg-cl);
-    padding: 94 0;
+body {
+    font-family: var(--main-font);
+    color: var(--main-text-color);
 }
 .link {
     text-decoration: none;
 }
-.colortext {
-    color: var(--accent-text-color);
+.list {
+    list-style: none;
 }
-.colortext-other {
-    color: var(--secondary-text-color);
+
+/* header */
+.page-start {
+    display: flex;
+    align-items: center;
 }
 .logo {
     font-family: var(--secondary-font);
@@ -43,28 +43,64 @@ body {
     letter-spacing: 0.03em;
     color: var(--dark-text-color);
 }
-.list-navigation {
+.logo 
+.colortext {
+    color: var(--accent-text-color);
+}
+.site-nav {
+    display: flex;
+    margin-left: 39px;
+}
+.site-nav 
+.item:not(:last-child) {
+    margin-right: 50px;
+}
+.item 
+.link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
     color: var(--main-text-color);
 }
-.current {
+.item .link:hover, 
+.item .link:focus {
     color: var(--accent-text-color);
 }
-.list-navigation:hover, .list-navigation:focus {
+.item .current {
     color: var(--accent-text-color);
 }
-.list-contacts {
+.site-contacts {
+    display: flex;
+    margin-left: auto;
+}
+.site-contacts .contacts-item + .contacts-item {
+    margin-left: 50px;
+}
+.contacts-item .link {
+    display: block;
+    padding-top: 32px;
+    padding-bottom: 32px;
+
     font-weight: 500;
     font-size: 14px;
-    line-height: 1.14;
+    line-height: 16px;
     letter-spacing: 0.02em;
     color: var(--third--text--color)
 }
-.list-contacts:hover, .list-contacts:focus {
+.contacts-item .link:hover, 
+.contacts-item .link:focus {
     color: var(--accent-text-color);
+}
+
+/* main */
+.hero{
+    background-color: var(--main-bg-cl);
+    padding: 94 0;
 }
 .hero-title {
     font-weight: 900;
@@ -75,8 +111,12 @@ body {
     text-transform: uppercase;
     color: var(--secondary-text-color);
     margin-bottom: 30px;
+    margin-top: 200px; 
 }
 .hero-button {
+    display: block;
+    margin: 0 auto;
+    
     font-family: inherit;
     font-weight: 700;
     font-size: 16px;
@@ -87,29 +127,17 @@ body {
     cursor: pointer;
     padding: 10px 32px;
     border-radius: 4px;
+    margin-bottom: 200px;
 }
-.hero-button:hover, .hero-button:focus {
+.hero-button:hover,
+.hero-button:focus {
     background-color: #188CE8;
 }
-.filter-button {
-    font-family: inherit;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 26px;
-    text-align: center;
-    letter-spacing: 0.03em;
-    color: var(--main-text-color);
-    background-color: #F5F4FA;
-    cursor: pointer;
-    padding: 6px 22px;
-    border-radius: 4px;
+.benefits {
+    display: flex;
 }
-.filter-button:hover, .filter-button:focus {
-    color: var(--secondary-text-color);
-    background-color: var(--accent-text-color);
-}
-.list {
-    list-style: none;
+.benefits .item + .item {
+    margin-left: 30px;
 }
 .list-title {
     font-weight: 700;
@@ -125,8 +153,9 @@ body {
     line-height: 1.71;
     letter-spacing: 0.03em;
     color: var(--third--text--color);
+    text-align: justify;
 }
-.title-activity {  
+.title-activity {
     font-weight: 700;
     font-size: 36px;
     line-height: 1.17;
@@ -158,6 +187,26 @@ body {
     line-height: 1.19;
     color: var(--third--text--color);
 }
+
+/* main portfolio */
+.filter-button {
+    font-family: inherit;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: var(--main-text-color);
+    background-color: #F5F4FA;
+    cursor: pointer;
+    padding: 6px 22px;
+    border-radius: 4px;
+}
+.filter-button:hover,
+.filter-button:focus {
+    color: var(--secondary-text-color);
+    background-color: var(--accent-text-color);
+}
 .project {
     font-weight: 700;
     font-size: 18px;
@@ -172,8 +221,14 @@ body {
     letter-spacing: 0.03em;
     color: var(--third--text--color);
 }
+
+/* footer */
 .page-footer {
     background-color: var(--main-bg-cl);
+}
+.logo 
+.colortext-other {
+    color: var(--secondary-text-color);
 }
 .footer-address {
     font-style: normal;
@@ -190,6 +245,7 @@ body {
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
 }
-.footer-contacts:hover, .footer-contacts:focus {
+.footer-contacts:hover, 
+.footer-contacts:focus {
     color: var(--accent-text-color);
 }
