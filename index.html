@@ -4,34 +4,34 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
-    />
-    <link rel="stylesheet" href="./css/styles.css" />
+    <title>WebStudio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
       rel="stylesheet"
     />
-    <title>goit-markup-hw-01</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
 
   <body>
-    <header>
-      <div class="container page-start">
+    <header class="header">
+      <div class="container start">
         <a href="./index.html" class="logo link"><span class="colortext">Web</span>Studio</a>
-        <nav>
+        <nav class="nav">
           <ul class="list site-nav">
-            <li class="item">
-              <a href="./index.html" class="list-navigation current link">Студія</a>
+            <li class="nav-item">
+              <a href="./index.html" class="link current">Студія</a>
             </li>
-            <li class="item">
-              <a href="./portfolio.html" class="list-navigation link">Портфоліо</a>
+            <li class="nav-item">
+              <a href="./portfolio.html" class="link">Портфоліо</a>
             </li>
-            <li class="item">
-              <a href="" class="list-navigation link">Контакти</a>
+            <li class="nav-item">
+              <a href="" class="link">Контакти</a>
             </li>
           </ul>
         </nav>
@@ -57,30 +57,30 @@
         </div>
       </section>
 
-      <section class="section">
+      <section class="section benefits">
         <div class="container">
-          <ul class="list benefits">
-            <li class="item">
-              <h2 class="list-title">УВАГА ДО ДЕТАЛЕЙ</h2>
-              <p class="list-text">
+          <ul class="list benefits-list">
+            <li class="benefits-item">
+              <h2 class="benefits-title">УВАГА ДО ДЕТАЛЕЙ</h2>
+              <p class="benefits-text">
                 Ідейні міркування, і навіть початок повсякденної роботи з формування позиції.
               </p>
             </li>
-            <li class="item">
-              <h2 class="list-title">ПУНКТУАЛЬНІСТЬ</h2>
-              <p class="list-text">
+            <li class="benefits-item">
+              <h2 class="benefits-title">ПУНКТУАЛЬНІСТЬ</h2>
+              <p class="benefits-text">
                 Завдання організації, особливо рамки і місце навчання кадрів тягне у себе.
               </p>
             </li>
-            <li class="item">
-              <h2 class="list-title">ПЛАНУВАННЯ</h2>
-              <p class="list-text">
+            <li class="benefits-item">
+              <h2 class="benefits-title">ПЛАНУВАННЯ</h2>
+              <p class="benefits-text">
                 Так само консультація з широким активом значною мірою зумовлює.
               </p>
             </li>
-            <li class="item">
-              <h2 class="list-title">СУЧАСНІ ТЕХНОЛОГІЇ</h2>
-              <p class="list-text">
+            <li class="benefits-item">
+              <h2 class="benefits-title">СУЧАСНІ ТЕХНОЛОГІЇ</h2>
+              <p class="benefits-text">
                 Значимість цих проблем настільки очевидна, що реалізація планових завдань.
               </p>
             </li>
@@ -88,10 +88,10 @@
         </div>
       </section>
 
-      <section class="section">
+      <section class="section activity">
         <div class="container">
-          <h2 class="title-activity">Чим ми займаємося</h2>
-          <ul class="list activity">
+          <h2 class="activity-title">Чим ми займаємося</h2>
+          <ul class="list activity-list">
             <li class="activity-item">
               <img
                 src="./images/activity/box_1.jpg"
@@ -131,8 +131,10 @@
                 width="270"
                 height="260"
               />
-              <h3 class="name">Ігор Дем'яненко</h3>
-              <p lang="en" class="position">Product Designer</p>
+              <div class="team-wrapper">
+                <h3 class="name">Ігор Дем'яненко</h3>
+                <p lang="en" class="position">Product Designer</p>
+              </div>
             </li>
             <li class="team-item">
               <img
@@ -141,8 +143,10 @@
                 width="270"
                 height="260"
               />
-              <h3 class="name">Ольга Рєпіна</h3>
-              <p lang="en" class="position">Frontend Developer</p>
+              <div class="team-wrapper">
+                <h3 class="name">Ольга Рєпіна</h3>
+                <p lang="en" class="position">Frontend Developer</p>
+              </div>
             </li>
             <li class="team-item">
               <img
@@ -151,8 +155,10 @@
                 width="270"
                 height="260"
               />
-              <h3 class="name">Микола Тарасов</h3>
-              <p lang="en" class="position">Marketing</p>
+              <div class="team-wrapper">
+                <h3 class="name">Микола Тарасов</h3>
+                <p lang="en" class="position">Marketing</p>
+              </div>
             </li>
             <li class="team-item">
               <img
@@ -161,26 +167,28 @@
                 width="270"
                 height="260"
               />
-              <h3 class="name">Михайло Єрмаков</h3>
-              <p lang="en" class="position">UI Designer</p>
+              <div class="team-wrapper">
+                <h3 class="name">Михайло Єрмаков</h3>
+                <p lang="en" class="position">UI Designer</p>
+              </div>
             </li>
           </ul>
         </div>
       </section>
     </main>
 
-    <footer>
-      <div class="container page-finish">
+    <footer class="footer">
+      <div class="container">
         <a href="./index.html" class="footer-logo link"
           ><span class="colortext">Web</span><span class="colortext-other">Studio</span></a
         >
         <address class="footer-address">
           <p class="footer-text">м. Київ, пр-т Лесі Українки, 26</p>
           <ul class="list footer-contacts">
-            <li>
+            <li class="footer-contacts-item">
               <a href="mailto:info@devstudio.com" class="link">info@devstudio.com</a>
             </li>
-            <li>
+            <li class="footer-contacts-item">
               <a href="tel:+380961111111" class="link">+38 096 111 11 11</a>
             </li>
           </ul>
